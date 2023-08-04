@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./Home.css";
-import How_to_Play from "../components/How to Play";
 
 function Home() {
   return (
@@ -12,15 +11,13 @@ function Home() {
           <h1 className="Titulo">Quiz App</h1>
         </div>
         <div className="Botão-conteiner">
-          <ul>
-            <li>
-              <Link to="/Play/Instruções">Play</Link>
-            </li>
-          </ul>
+
+          <Link  className="Botão" to="/Play/Instruções">Play</Link>
+            
         </div>
         <div className="Login">
-          <Link to="/Login">Login</Link>
-          <Link to="/Cadastro">Cadastro</Link>
+          <Link to="/Login" className="botão-login">Login</Link>
+          <Link to="/Cadastro" className="botão-cadastro">Cadastro</Link>
         </div>
       </section>
     </div>

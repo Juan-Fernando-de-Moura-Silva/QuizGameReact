@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
 .Home {
   background-image:url("../Assets/img/background3.jpg");
   background-size:cover ;
@@ -28,17 +35,65 @@
   color: antiquewhite;
   text-align: center;
   font-size: 4rem;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .Botão-conteiner{
   color: antiquewhite;
   text-align: center;
   font-size: 3rem;
+  width: 100%;
 }
 
 .Login{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: antiquewhite;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.Botão {
+  width: 100%;
+  background-color: rgb(10, 98, 69);
+  color: antiquewhite;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Botão:hover{
+  background-color: rgb(6, 79, 55);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.14),0 3px 1px -2px rgba(0, 0, 0, 0.12),0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.botão-login{
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: tomato;
+  height: 45px;
+  width: 45%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.botão-login:hover{
+  background-color: rgb(255, 59, 24);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.14),0 3px 1px -2px rgba(0, 0, 0, 0.12),0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.botão-cadastro{
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: rgb(5, 104, 104);
+  height: 45px;
+  width: 45%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.botão-cadastro:hover{
+  background-color: rgb(2, 68, 68);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.14),0 3px 1px -2px rgba(0, 0, 0, 0.12),0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }

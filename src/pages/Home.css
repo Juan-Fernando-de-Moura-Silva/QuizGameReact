@@ -1,0 +1,44 @@
+.Home {
+  background-image:url("../Assets/img/background3.jpg");
+  background-size:cover ;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Menu {
+  background: rgba(0, 0, 0, 0.6);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 80%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Logo {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.Titulo {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.Botão-conteiner{
+  color: antiquewhite;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.Login{
+  display: flex;
+  justify-content: space-around;
+  color: antiquewhite;
+  font-size: 3rem;
+}

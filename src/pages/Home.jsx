@@ -12,7 +12,7 @@ function Home() {
         </div>
         <div className="Botão-conteiner">
 
-          <Link  className="Botão" to="/Play/Instruções">Play</Link>
+          <Link  className="Botão" to="/Instruções">Play</Link>
             
         </div>
         <div className="Login">

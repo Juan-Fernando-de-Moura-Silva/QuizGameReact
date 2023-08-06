@@ -1,0 +1,68 @@
+.Pergunta {
+  max-width: 600px;
+  margin: 160px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-left: 5px solid rgb(65, 200, 227);
+}
+
+.Heads {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Vidas, .Combo, .Dica, .Numero_de_perguntas, .Timer {
+  display: flex;
+  align-items: center;
+}
+
+.Vidas, .Combo, .Dica, .Numero_de_perguntas {
+  margin-right: 20px;
+}
+
+.Combo img, .Dica img, .Timer img {
+  height: 50px;
+  margin-right: 5px;
+}
+
+.Question{
+  display: flex;
+  justify-content: center;
+}
+
+.Opções-Container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.opção {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.opção:hover{
+  background-color: #d39696;
+}
+
+.container-botão {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -66,6 +66,31 @@ handleOptionclick = (e) => {
   }
 };
 
+handleNextButton = (e) => {
+  if(this.state.nextQuestion !== undefined) {
+    this.setState(prevState =>({
+      currentQuestionIndex: prevState.currentQuestionIndex+1
+    }),()=>{
+      this.displayQuestions(this.state.state, this.state.currentQuestion,this.state.nextQuestion,this.state.previousquestion);
+    })
+  }
+};
+
+handlePreviusButton = (e) => {
+  if(this.state.previousquestion !== undefined) {
+    this.setState(prevState =>({
+      currentQuestionIndex: prevState.currentQuestionIndex-1
+    }),()=>{
+      this.displayQuestions(this.state.state, this.state.currentQuestion,this.state.nextQuestion,this.state.previousquestion);
+    })
+  }
+
+};
+
+handleQuitButton = (e) => {
+
+};
+
   correctAnswer = () => {
   M.toast({
     html: "Correto!",
@@ -77,7 +102,9 @@ handleOptionclick = (e) => {
     correctAnswer: prevState.correctAnswer + 1,
     currentQuestionIndex: prevState.currentQuestionIndex + 1,
     numberOfAnsweredQuestions: prevState.numberOfAnsweredQuestions + 1,
-  }));
+  }),()=>{
+    this.displayQuestions(this.state.questions,this.state.currentQuestion, this.state.nextQuestion,this.state.previousquestion);  
+  });
 };
 
   wrongAnswer = () =>{
@@ -91,7 +118,9 @@ handleOptionclick = (e) => {
       wrongAnswer: prevState+1,
       currentQuestionIndex: prevState.currentQuestionIndex+1,
       numberOfAnsweredQuestions:prevState.numberOfAnsweredQuestions+1
-    }));
+    }),()=>{
+    this.displayQuestions(this.state.questions,this.state.currentQuestion, this.state.nextQuestion,this.state.previousquestion);  
+  });
   }
 
   render() {
@@ -142,9 +171,9 @@ handleOptionclick = (e) => {
 
           </div>
           <div className="container-botão">
-            <button> Anterior </button>
-            <button> Proxima </button>
-            <button> Quit </button>
+            <button onClick={this.handlePreviusButton}> Anterior </button>
+            <button onClick={this.handleNextButton}> Proxima </button>
+            <button onClick={this.handleQuitButton}> Quit </button>
           </div>
         </div>
       </>
